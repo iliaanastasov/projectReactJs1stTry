@@ -4,16 +4,12 @@ import ball from '../public/images/soccerball.png'
 
 class Header extends Component {
   state = {
-    searchValue: ""
-  }
+    user: "",
+    currentBalance:100,
+    team:[]
 
-  handleChange = (event) => {
-    this.setState({
-      searchValue: event.target.value
-    })
   }
-
-  render() {
+ render() {
 
     return (
       <div className="header-container">
